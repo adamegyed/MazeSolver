@@ -7,6 +7,10 @@
 //
 
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <stdint.h>
 
 #define MAX_SIZE_X 30
 #define MAX_SIZE_Y 30
@@ -19,12 +23,12 @@ int main(int argc, const char * argv[])
   int yinput;
   
   do{
-  cout<<"How tall would you like your maze to be?";
+  cout<<"How tall would you like your maze to be?"<<endl;
   cin>>xinput;
   }while(xinput>MAX_SIZE_X);
   
   do{
-    cout<<"How wide would you like your maze to be?";
+    cout<<"How wide would you like your maze to be?"<<endl;
     cin>>yinput;
   }while(yinput>MAX_SIZE_X);
   

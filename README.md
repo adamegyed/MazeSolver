@@ -1,0 +1,6 @@
+MazeSolver
+==========
+
+Solves mazes.
+
+

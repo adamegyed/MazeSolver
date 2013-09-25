@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <stdint.h>
+#include "maze.h"
 
 #define MAX_SIZE_X 30
 #define MAX_SIZE_Y 30
@@ -31,9 +32,7 @@ int main(int argc, const char * argv[])
     cout<<"How wide would you like your maze to be?"<<endl;
     cin>>yinput;
   }while(yinput>MAX_SIZE_X);
-  
 
-  
   
 }
 

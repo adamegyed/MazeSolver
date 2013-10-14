@@ -54,7 +54,93 @@ void Maze::specWall_(int xCoord, int yCoord, int side, bool make) {
   }
 }
 
+bool Maze::isWall(int xCoord,int yCoord,int side) {
+  if (xCoord<0||xCoord>=xSize_||yCoord<0||yCoord>=ySize_) {
+    std::cerr<<"Really?"<<std::endl;
+    return false;
+  }
+  if (side & SIDE_UP) {
+    if(hWall_[indexOfDoubleArr(xCoord, yCoord+1, xSize_, ySize_)] == 1) {
+      return true;
+    }
+    else return false;
+  }
+  if (side & SIDE_DOWN) {
+    if(hWall_[indexOfDoubleArr(xCoord, yCoord, xSize_, ySize_)] == 1) {
+      return true;
+    }
+    else return false;
+  }
+  if (side & SIDE_RIGHT) {
+    if (vWall_[indexOfDoubleArr(xCoord+1, yCoord, xSize_, ySize_)] == 1) {
+      return true;
+    }
+    else return false;
+  }
+  if (side & SIDE_LEFT) {
+    if (vWall_[indexOfDoubleArr(xCoord, yCoord, xSize_, ySize_)] == 1) {
+      return true;
+    }
+    else return false;
+  }
+  return false;
+}
 
+
+void Maze::printM() {
+
+  for (int y=(ySize_-1);y>=0; y--) {
+    
+    for (int x=0;x<xSize_; x++) {
+      
+      std::cout<<"+";
+      
+      if (isWall(x,y,SIDE_UP)) {
+        std::cout<<"--";
+      }
+      else std::cout<<"  ";
+    }
+    std::cout<<"+"<<std::endl;
+    
+    for (int x=0;x<xSize_; x++) {
+      
+      
+      if (isWall(x,y,SIDE_LEFT)) {
+        std::cout<<"|  ";
+      }
+      else std::cout<<"   ";
+    }
+    if (isWall(xSize_-1,y,SIDE_RIGHT)) {
+      std::cout<<"|"<<std::endl;
+    }
+    else std::cout<<" "<<std::endl;
+
+    
+    
+  }
+  //draw last line of maze, if present
+  for (int x=0;x<xSize_; x++) {
+    
+    std::cout<<"+";
+    
+    if (isWall(x,0,SIDE_DOWN)) {
+      std::cout<<"--";
+    }
+    else std::cout<<"  ";
+  }
+  std::cout<<"+"<<std::endl;
+
+  
+  
+  
+  // for (y=(ymax-1); y>=0; y--) {
+  //    for (x=0; x<xmax; x++) {
+  //       // figure out for this square which walls are set
+  //
+  //+--+
+  //|  |
+  //+--+
+}
 
            
 

@@ -24,14 +24,19 @@ int main(int argc, const char * argv[])
   int yinput;
   
   do{
-  cout<<"How tall would you like your maze to be?"<<endl;
+  cout<<"How wide would you like your maze to be?"<<endl;
   cin>>xinput;
   }while(xinput>MAX_SIZE_X);
   
   do{
-    cout<<"How wide would you like your maze to be?"<<endl;
+    cout<<"How tall would you like your maze to be?"<<endl;
     cin>>yinput;
   }while(yinput>MAX_SIZE_X);
+  
+  Maze maze1(xinput,yinput);
+  maze1.setWall(9,9,Maze::SIDE_DOWN);
+  maze1.printM();
+  return 0;
 
   
 }

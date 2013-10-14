@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <stdio.h>
+#include <string>
 
 //Origin is in bottom-left, 0-based indices
 class Maze {
@@ -19,10 +20,12 @@ public:
   ~Maze();
   void setWall(int xCoord, int yCoord, int side);
   void delWall(int xCoord, int yCoord, int side);
-  const int SIDE_UP = 1;
-  const int SIDE_RIGHT = 2;
-  const int SIDE_DOWN = 4;
-  const int SIDE_LEFT = 8;
+  bool isWall (int xCoord, int yCoord, int side);
+  void printM();
+  const static int SIDE_UP = 1;
+  const static int SIDE_RIGHT = 2;
+  const static int SIDE_DOWN = 4;
+  const static int SIDE_LEFT = 8;
 private:
   int indexOfDoubleArr(int x, int y, int xSize, int ySize);
   int* hWall_;

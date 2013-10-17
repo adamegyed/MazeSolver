@@ -35,9 +35,11 @@ int main(int argc, const char * argv[])
   
   Maze maze1(xinput,yinput);
   maze1.setWall(9,9,Maze::SIDE_DOWN);
+  maze1.surroundMaze();
   maze1.printM();
   return 0;
 
-  
 }
+
+
 

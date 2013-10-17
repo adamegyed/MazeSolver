@@ -22,6 +22,7 @@ public:
   void delWall(int xCoord, int yCoord, int side);
   bool isWall (int xCoord, int yCoord, int side);
   void printM();
+  void surroundMaze();
   const static int SIDE_UP = 1;
   const static int SIDE_RIGHT = 2;
   const static int SIDE_DOWN = 4;

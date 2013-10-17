@@ -148,5 +148,17 @@ int Maze::indexOfDoubleArr(int x, int y, int xSize, int ySize) {
   return x+(y*xSize);
 }
 
+void Maze::surroundMaze() {
+  //bottom + top layer
+  for (int x=0;x<xSize_;x++) {
+    setWall(x,0,SIDE_DOWN);
+    setWall(x,ySize_-1,SIDE_UP);
+  }
+  for (int y=0;y<ySize_;y++) {
+    setWall(0,y,SIDE_LEFT);
+    setWall(xSize_-1,y,SIDE_RIGHT);
+  }
+}
+
 
 

@@ -10,29 +10,29 @@
 	<string>MazeSolver</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>2821DE9A-75E2-4A79-8C37-A3298AAAD4D5</key>
+		<key>1E51C8DB57A62F20407861FF53B0779229CB00E9</key>
 		<string>https://github.com/Ad4m7/MazeSolver.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MazeSolver.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2821DE9A-75E2-4A79-8C37-A3298AAAD4D5</key>
+		<key>1E51C8DB57A62F20407861FF53B0779229CB00E9</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Ad4m7/MazeSolver.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2821DE9A-75E2-4A79-8C37-A3298AAAD4D5</string>
+	<string>1E51C8DB57A62F20407861FF53B0779229CB00E9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2821DE9A-75E2-4A79-8C37-A3298AAAD4D5</string>
+			<string>1E51C8DB57A62F20407861FF53B0779229CB00E9</string>
 			<key>IDESourceControlWCCName</key>
 			<string>MazeSolver</string>
 		</dict>

@@ -18,6 +18,8 @@
 
 using namespace std;
 
+Maze* genMaze(int xSize,int ySize);
+
 int main(int argc, const char * argv[])
 {
   int xinput;
@@ -32,14 +34,33 @@ int main(int argc, const char * argv[])
     cout<<"How tall would you like your maze to be?"<<endl;
     cin>>yinput;
   }while(yinput>MAX_SIZE_X);
-  
+  /*
   Maze maze1(xinput,yinput);
   maze1.setWall(9,9,Maze::SIDE_DOWN);
   maze1.surroundMaze();
-  maze1.printM();
+  maze1.printM();*/
+  
+  Maze* maze1 = genMaze(15,20);
+  maze1->printM();
+  
+  cerr<<"Hi"<<endl;
+  
   return 0;
 
 }
+
+Maze* genMaze(int xSize,int ySize){
+  Maze* m1 = new Maze(xSize,ySize);
+  m1->surroundMaze();
+  
+  
+  
+  
+  
+  
+  return m1;
+}
+
 
 
 
